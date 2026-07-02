@@ -48,4 +48,21 @@ Perfect for casual outings, parties and everyday fashion.
 <script src="script.js"></script>
   
 </body>
+  <script>
+function addToCart() {
+
+    const product = {
+        name: "Black Bow Top",
+        price: 349,
+        image: "Screenshot_2026_0627_184931.jpg",
+        quantity: 1
+    };
+
+    localStorage.setItem("cart", JSON.stringify([product]));
+
+    alert("🛒 Product Added to Cart!");
+
+    window.location.href = "cart.html";
+}
+  </script>
 </html>
